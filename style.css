@@ -18,6 +18,10 @@ body {
 }
 
 
+:root {
+    --main-color: rgb(195, 9, 219);
+    --underlines: rgb(9, 195, 219);
+}
 
 /*-------*/
 
@@ -44,7 +48,7 @@ a:visited {
 }
 
 a:hover {
-    color: rgb(195, 9, 219);
+    color: var(--main-color);
 }
 
 
@@ -54,10 +58,10 @@ a:hover {
     display: flex;
     justify-content: space-between;
     background-color: rgba(155, 155, 155, 0.2);
-    height: 30px;
+    height: 32px;
     font-weight: 500;
     font-size: 14px;
-    padding-top: 5px;
+    padding-top: 8px;
     align-items: baseline;
 }
 
@@ -73,14 +77,14 @@ a:hover {
     justify-content: space-between;
     align-items: baseline;
     height: 130px;
-    padding-top:25px;
+    padding-top:24px;
     border-bottom: 1px solid lightgrey;
 }
 
 .logo {
     font-family: "Muli", sans-serif;
     font-weight: 700;
-    font-size: 47px;
+    font-size: 48px;
     padding-left: 15px;
 }
 
@@ -88,23 +92,23 @@ a:hover {
     border: none;
     cursor: pointer;
     background:none;
-    height: 50px;
-    font-size: 2em; 
+    height: 48px;
+    font-size: 16px; 
 }
 
 .search-bar button:hover{
-    /*background-color: rgba(155, 155, 155, 0.5);*/
     box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2); 
 }
 
 .search-bar input[type="text"] {
-    width: 650px;
-    height: 50px;
+    width: 32em;
+    height: 48px;
     border-radius: 10px;
     border: 0;
     box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
     padding: 8px;
     font-size: 16px;
+    margin-right: 0;
 }
 
   /*----NAVE MENU------*/
@@ -112,12 +116,12 @@ a:hover {
 .nav-menu{
     display:flex;
     justify-content: space-around;
-    padding-top: 15px;
+    padding-top: 16px;
     font-weight: 500;
 }
 
 .nav-menu a:hover{
-    border-bottom: 3px solid rgb(219, 9, 219);
+    border-bottom: 3px solid var(--main-color);
     color:  hsl(0,0%,13%);
     padding-bottom: 2px;
 }
@@ -126,28 +130,35 @@ a:hover {
   /*----TOP SELLER CAROUSEL------*/
 
 .top-seller-carousel{
-      padding-top: 75px;
+      padding-top: 72px;
       
 }
 
 .top-seller-carousel img {
-    height: 250px;
-    padding: 0 8px 0;
+    height: 248px;
+    margin: 0 8px 0;
+    box-shadow: 0 2px 4px 0 hsla(0, 0%, 0%, 0.2);    
 }
 
+  /*----CONTAINERS------*/
+
 .container {
-    padding-top: 50px;
-    width: 250px;
+    padding-top: 48px;
+    padding-bottom: 48px;
 }
 
 .container header h2 {
-    border-bottom: 3px solid rgb(219, 9, 219);
-    padding-bottom: 2px;
+    border-bottom: 2px solid var(--underlines);
+    padding-bottom: 4px;
+    width: 248px;
+    margin-bottom: 48px;
 }
 
 .container img {
     height: 200px;
-    padding-right: 10px;
+    margin: 0 40px 15px 0;
+    margin-bottom: 50px;
+    box-shadow: 0 2px 4px 0 hsla(0, 0%, 0%, 0.2);   
 }
 
   /*----SUBSCRIBE------*/
@@ -155,11 +166,11 @@ a:hover {
   .subscribe input[type="text"] {
     font-weight: 500;
     font-size:18px;
-    width: 650px;
-    height: 50px;
+    width: 648px;
+    height: 48px;
     border: 2px solid rgb(219, 9, 219);
     border-radius: 3px;
-    padding-left: 15px;
+    padding-left: 16px;
 }
 
 .subscribe button {  
@@ -168,10 +179,10 @@ a:hover {
     font-weight:700; 
     font-size: 22px;
     cursor: pointer;
-    height: 50px;
+    height: 48px;
     background:rgb(219, 9, 219);; 
     border: 2px solid rgb(219, 9, 219);
     border-radius: 3px;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 16px;
+    padding-left: 16px;
 }
