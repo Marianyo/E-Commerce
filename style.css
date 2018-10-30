@@ -72,15 +72,6 @@ a:hover {
 
   /*----LOGO & SEARCH BAR------*/
 
-.search-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    height: 128px;
-    padding-top:24px;
-    border-bottom: 1px solid lightgrey;
-}
-
 .logo {
     font-family: "Muli", sans-serif;
     font-weight: 700;
@@ -88,31 +79,53 @@ a:hover {
     padding-left: 16px;
 }
 
-.search-bar button {
-    height: 48px;
+.search-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 128px;
+    padding-top:24px;
+    border-bottom: 1px solid lightgrey;
+
+}
+
+.search-bar__input {
+    border: none;
+    border-radius:  10px 10px 10px 10px;
+    box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
+    font-size: 16px;
+}
+
+.search-bar__input button {
     cursor: pointer;
     border: none;
     background: none;
-    border-radius:  0 10px 10px 0;
-    box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
-    padding: 8px;
-    font-size: 16px; 
+    padding: 12px;
+    border-left: 1px solid rgba(155, 155, 155, 0.2);
+    font-size: 18px;
+    color: var(--main-color);
+    
 }
 
-.search-bar button:hover{
-    box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
-    background:  rgba(155, 155, 155, 0.2);
+.search-bar__input button:hover{
+    color:  var(--main-color);
+    background-color: lightgrey;
+    border-radius:  0px 10px 10px 0px;
+
+
 }
 
-.search-bar input[type="text"] {
-    width: 32em;
-    height: 48px;
+.search-bar__input input[type="text"] {
+    width: 38em;
     border: none;
-    border-radius:  10px 0 0 10px;
-    box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
-    padding: 8px;
+    padding: 15px;
     font-size: 16px;
+    border-radius:  10px 0px 0px 10px;
+    background-color: none;
 }
+
+
+
 
   /*----NAV MENU------*/
 
@@ -134,6 +147,7 @@ a:hover {
 
 .top-seller-carousel{
     display: flex;
+    justify-content: space-around;
     padding-top: 72px;
       
 }
@@ -171,14 +185,20 @@ a:hover {
 
   /*----SUBSCRIBE------*/
 
+    aside {
+        text-align: center;
+        padding-bottom: 70px;
+        padding-top: 50px;
+
+    }
+
   .subscribe input[type="text"] {
     font-weight: 500;
-    font-size:18px;
+    font-size:22px;
     width: 648px;
-    height: 48px;
     border: 2px solid var(--main-color);
     border-radius: 3px;
-    padding-left: 16px;
+    padding: 15px 0 15px 16px;
 }
 
 .subscribe input[type="submit"] {  
@@ -187,10 +207,29 @@ a:hover {
     font-weight:700; 
     font-size: 22px;
     cursor: pointer;
-    height: 48px;
     background: var(--main-color);
     border: 2px solid var(--main-color);
     border-radius: 3px;
-    padding-right: 16px;
-    padding-left: 16px;
+    text-align: center;
+    padding: 15px 0 15px 0;
+    width: 148px;
+}
+
+.footer__title-list {
+    font-weight: 700;
+
+}
+
+footer li{
+    display: block;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(155, 155, 155, 0.2);
+    padding: 70px;
+    color: rgba(155, 155, 155, 0.95);
+    line-height: 25px;
+    margin-bottom:75px;
 }
